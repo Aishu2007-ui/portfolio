@@ -3,118 +3,314 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aishwarya | Portfolio</title>
-
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
-body{
-background:#f5f5f5;
-color:#333;
-}
-
-header{
-background:#0d6efd;
-color:white;
-padding:40px;
-text-align:center;
-}
-
-header h1{
-font-size:40px;
-}
-
-header p{
-margin-top:10px;
-font-size:18px;
-}
-
-section{
-padding:40px;
-max-width:900px;
-margin:auto;
-}
-
-.card{
-background:white;
-padding:25px;
-margin:20px 0;
-border-radius:12px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
-}
-
-h2{
-color:#0d6efd;
-margin-bottom:15px;
-}
-
-ul{
-padding-left:20px;
-}
-
-footer{
-background:#0d6efd;
-color:white;
-text-align:center;
-padding:15px;
-margin-top:30px;
-}
-</style>
-
+<title>Aishwarya V — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-<h1>Aishwarya V</h1>
-<p>B.Tech CSE Student | Future Software Developer</p>
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-brand">AISHWARYA<span>.V</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#certifications" class="nav-link">Certifications</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="https://github.com/" target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55v-2.15c-3.17.69-3.83-1.34-3.83-1.34-.52-1.32-1.27-1.68-1.27-1.68-1.03-.71.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.02 1.74 2.66 1.24 3.31.95.1-.74.4-1.24.72-1.53-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.05-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.14 1.16a10.9 10.9 0 0 1 5.72 0c2.18-1.47 3.14-1.16 3.14-1.16.62 1.57.23 2.73.11 3.02.73.79 1.17 1.81 1.17 3.05 0 4.37-2.67 5.33-5.21 5.62.41.36.77 1.06.77 2.14v3.17c0 .3.21.66.79.55 4.51-1.51 7.77-5.76 7.77-10.78C23.02 5.24 18.27.5 12 .5z"/></svg>
+      </a>
+      <a href="https://linkedin.com/" target="_blank" rel="noopener" class="icon-btn" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.25 2.37 4.25 5.44v6.3zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+      </a>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </header>
 
-<section>
+<!-- ===== HOME / HERO ===== -->
+<section id="home" class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-text reveal">
+      <p class="eyebrow mono">COMPUTER SCIENCE &amp; ENGINEERING · BATCH OF 2028</p>
+      <h1 class="hero-title">
+        Aishwarya V
+        <span class="hero-sub" id="typedText"></span>
+      </h1>
+      <p class="hero-desc">
+        B.Tech student in <strong>Computer Science &amp; Engineering</strong> at
+        Sri Jayaram Institute of Engineering and Technology — building fundamentals in
+        Python, SQL and problem solving, and looking to turn coursework into real,
+        working projects.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Get in touch</a>
+        <a href="#education" class="btn btn-outline">View academic record</a>
+      </div>
+    </div>
 
-<div class="card">
-<h2>About Me</h2>
-<p>
-Hello! I am Aishwarya, a B.EComputer Science Engineering student.
-I am interested in Web Development, Programming, and Software Development.
-I enjoy learning new technologies and creating projects.
-</p>
-</div>
-
-<div class="card">
-<h2>Skills</h2>
-<ul>
-<li>C Programming</li>
-<li>HTML</li>
-<li>CSS</li>
-<li>Java (Basic)</li>
-<li>Python (Basic)</li>
-</ul>
-</div>
-
-<div class="card">
-<h2>Education</h2>
-<p>
-B.Tech Computer Science Engineering<br>
-Sri Jayaram Institute of Engineering and Technology
-</p>
-</div>
-
-<div class="card">
-<h2>Contact</h2>
-<p>Email: yourmail@gmail.com</p>
-<p>Phone: +91 XXXXXXXXXX</p>
-</div>
-
+    <div class="hero-card reveal" style="--delay:0.15s">
+      <div class="id-card id-card--photo">
+        <div class="id-scan" aria-hidden="true"></div>
+        <img src="assets/profile.png" alt="Aishwarya V, B.Tech Computer Science and Engineering student" class="id-photo-full">
+      </div>
+      <div class="floating-tag tag-2 mono">Focus: Java / Python</div>
+      <div class="floating-tag tag-3 mono">Status: open to work</div>
+    </div>
+  </div>
+  <a href="#about" class="scroll-cue" aria-label="Scroll to About">
+    <span></span>
+  </a>
 </section>
 
-<footer>
-© 2026 Aishwarya. All Rights Reserved.
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section">
+  <div class="section-inner">
+    <p class="eyebrow mono reveal">01 / ABOUT</p>
+    <h2 class="section-title reveal">A learner drawn to <em>logic, data, and the quiet satisfaction of things that work.</em></h2>
+
+    <div class="about-grid">
+      <div class="about-copy reveal">
+        <div class="about-block">
+          <h3 class="mono label">Objective</h3>
+          <p>To explore opportunities in software development, networking and emerging
+          technologies where I can apply my academic knowledge, strengthen my technical
+          skills, and contribute to innovative projects — while gaining real industry
+          exposure alongside my degree.</p>
+        </div>
+        <div class="about-block">
+          <h3 class="mono label">About Me</h3>
+          <p>I'm currently pursuing my B.Tech in Computer Science &amp; Engineering,
+          and I enjoy the process of taking a problem apart — in Python, in SQL, in a plain
+          C program — until it's solvable. I'm a quick learner who likes picking up new
+          tools as I need them, and I try to bring that same patience to working with a
+          team as I do to debugging.</p>
+        </div>
+      </div>
+
+      <div class="about-facts reveal" style="--delay:0.1s">
+        <div class="fact">
+          <span class="mono fact-label">Based in</span>
+          <span class="fact-value">Thiruvallur District, Tamil Nadu</span>
+        </div>
+        <div class="fact">
+          <span class="mono fact-label">Currently</span>
+          <span class="fact-value">B.Tech CSE, 2024–2028</span>
+        </div>
+        <div class="fact">
+          <span class="mono fact-label">Seeking</span>
+          <span class="fact-value">Internship &amp; project opportunities</span>
+        </div>
+        <div class="fact">
+          <span class="mono fact-label">Email</span>
+          <span class="fact-value">aishuvelayutham@gmail.com</span>
+        </div>
+        <div class="fact">
+          <span class="mono fact-label">Phone</span>
+          <span class="fact-value">+91 93845 88071</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EDUCATION ===== -->
+<section id="education" class="section section-alt">
+  <div class="section-inner">
+    <p class="eyebrow mono reveal">02 / EDUCATION</p>
+    <h2 class="section-title reveal">Academic record.</h2>
+    <p class="section-lede reveal">Three stages so far — from secondary school in Kannigaipair to a Computer Science &amp; Engineering degree currently in progress.</p>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-marker"></div>
+        <div class="timeline-card">
+          <p class="mono timeline-year">2024 — 2028</p>
+          <h3>Sri Jayaram Institute of Engineering and Technology</h3>
+          <p class="timeline-degree">B.Tech, Computer Science &amp; Engineering · Anna University</p>
+          <div class="timeline-score">
+            <span class="score-badge in-progress mono">PURSUING</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal" style="--delay:0.1s">
+        <div class="timeline-marker"></div>
+        <div class="timeline-card">
+          <p class="mono timeline-year">2023 — 2024</p>
+          <h3>Government Higher Secondary School, Kannigaipair</h3>
+          <p class="timeline-degree">Higher Secondary Certificate · State Board</p>
+          <div class="timeline-score">
+            <span class="score-badge mono">63.5%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal" style="--delay:0.2s">
+        <div class="timeline-marker"></div>
+        <div class="timeline-card">
+          <p class="mono timeline-year">2021 — 2022</p>
+          <h3>Government Higher Secondary School, Kannigaipair</h3>
+          <p class="timeline-degree">SSLC · State Board</p>
+          <div class="timeline-score">
+            <span class="score-badge mono">62.5%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills" class="section">
+  <div class="section-inner">
+    <p class="eyebrow mono reveal">03 / SKILLS</p>
+    <h2 class="section-title reveal">Technical grounding and working strengths.</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <h3 class="mono label">Technical</h3>
+        <div class="chip-row">
+          <span class="chip">Python</span>
+          <span class="chip">C</span>
+          <span class="chip">SQL</span>
+          <span class="chip">Typing</span>
+        </div>
+      </div>
+      <div class="skill-card reveal" style="--delay:0.1s">
+        <h3 class="mono label">Personal Strengths</h3>
+        <div class="chip-row">
+          <span class="chip">Quick Learner</span>
+          <span class="chip">Problem Solving</span>
+          <span class="chip">Teamwork</span>
+          <span class="chip">Communication</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects" class="section section-alt">
+  <div class="section-inner">
+    <p class="eyebrow mono reveal">04 / PROJECTS</p>
+    <h2 class="section-title reveal">Things I'm building.</h2>
+    <p class="section-lede reveal">A few project slots, ready to fill in as coursework and personal builds take shape.</p>
+
+    <div class="project-grid">
+      <div class="project-card reveal">
+        <div class="project-card-top">
+          <span class="mono project-tag">Python</span>
+        </div>
+        <h3>Add your project title</h3>
+        <p>Short description of what this project does, the problem it solves, and your role in building it.</p>
+        <div class="project-links">
+          <a href="#" class="text-link">Code →</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal" style="--delay:0.1s">
+        <div class="project-card-top">
+          <span class="mono project-tag">SQL</span>
+        </div>
+        <h3>Add your project title</h3>
+        <p>Short description of what this project does, the problem it solves, and your role in building it.</p>
+        <div class="project-links">
+          <a href="#" class="text-link">Code →</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal" style="--delay:0.2s">
+        <div class="project-card-top">
+          <span class="mono project-tag">C</span>
+        </div>
+        <h3>Add your project title</h3>
+        <p>Short description of what this project does, the problem it solves, and your role in building it.</p>
+        <div class="project-links">
+          <a href="#" class="text-link">Code →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CERTIFICATIONS ===== -->
+<section id="certifications" class="section">
+  <div class="section-inner">
+    <p class="eyebrow mono reveal">05 / CERTIFICATIONS</p>
+    <h2 class="section-title reveal">Courses &amp; credentials.</h2>
+    <p class="section-lede reveal">Add certifications as you complete them — online courses, workshops, or institute-issued credentials.</p>
+
+    <div class="cert-list">
+      <div class="cert-item reveal">
+        <div class="cert-icon mono">01</div>
+        <div class="cert-body">
+          <h3>Certification title</h3>
+          <p class="mono cert-meta">Issuing platform · Year</p>
+        </div>
+      </div>
+      <div class="cert-item reveal" style="--delay:0.1s">
+        <div class="cert-icon mono">02</div>
+        <div class="cert-body">
+          <h3>Certification title</h3>
+          <p class="mono cert-meta">Issuing platform · Year</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section section-alt contact-section">
+  <div class="section-inner">
+    <p class="eyebrow mono reveal">06 / CONTACT</p>
+    <h2 class="section-title reveal">Open to internship opportunities — <em>let's talk.</em></h2>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <a href="mailto:aishuvelayutham@gmail.com" class="contact-row">
+          <span class="mono contact-label">Email</span>
+          <span class="contact-value">aishuvelayutham@gmail.com</span>
+        </a>
+        <a href="tel:+919384588071" class="contact-row">
+          <span class="mono contact-label">Phone</span>
+          <span class="contact-value">+91 93845 88071</span>
+        </a>
+        <div class="contact-row">
+          <span class="mono contact-label">Location</span>
+          <span class="contact-value">Thiruvallur District, Tamil Nadu</span>
+        </div>
+      </div>
+
+      <div class="contact-buttons reveal" style="--delay:0.1s">
+        <a href="https://github.com/" target="_blank" rel="noopener" class="btn btn-primary btn-wide">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55v-2.15c-3.17.69-3.83-1.34-3.83-1.34-.52-1.32-1.27-1.68-1.27-1.68-1.03-.71.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.02 1.74 2.66 1.24 3.31.95.1-.74.4-1.24.72-1.53-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.05-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.14 1.16a10.9 10.9 0 0 1 5.72 0c2.18-1.47 3.14-1.16 3.14-1.16.62 1.57.23 2.73.11 3.02.73.79 1.17 1.81 1.17 3.05 0 4.37-2.67 5.33-5.21 5.62.41.36.77 1.06.77 2.14v3.17c0 .3.21.66.79.55 4.51-1.51 7.77-5.76 7.77-10.78C23.02 5.24 18.27.5 12 .5z"/></svg>
+          GitHub
+        </a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener" class="btn btn-outline btn-wide">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.25 2.37 4.25 5.44v6.3zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>NO. 156, Mariamman Kovil Street, Manjankaranai, Thiruvallur District, Tamil Nadu – 601102</p>
+  <p class="mono">Aishwarya V · Portfolio</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
-</html>
+  </html>
